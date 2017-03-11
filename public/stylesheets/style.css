@@ -1,8 +1,82 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url('../images/background.png')  no-repeat center center fixed;
+  font: 22px 'Goudy Old Style', 'Helvetica', sans-serif;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+}
+
+header{
+  margin: 40px auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 96px;
+  letter-spacing: -6px;
+}
+
+main{
+  margin: 0 auto;
+}
+
+main#home{
+  width: 520px;
+}
+
+#joinlobby{
+  color: #3f3e3e;
+  padding: 15px;
+  width: 410px;
+  font-size: 42px;
+  font-weight: bold;
+  height: 50px;
+  background-color: white;
+  float: left;
+}
+
+#joinlobby input[type="text"]{
+  color: #3f3e3e;
+  font-weight: bold;
+  border: 0;
+  outline: none;
+  font: 42px 'Goudy Old Style', 'Helvetica', sans-serif;
+}
+
+#gobutton{
+  width: 46px;
+  height: 46px;
+  padding: 15px;
+  float: left;
+  background-color: #3f3e3e;
+  line-height: 50px;
+  font-size: 52px;
+  color: white;
+  border: 2px solid #fff;
+}
+
+#createlobby{
+  margin-top: 25px;
+  width: 490px;
+  height: 50px;
+  padding: 15px;
+  background-color: #3f3e3e;
+  font-size: 44px;
+  font-weight: bold;
+  text-align: center;
+}
+
+a #createlobby{
+  color: #fff;
+  text-decoration: none;
+}
+
+.clear{
+  clear: both;
 }
 
 a {
   color: #00B7FF;
+  text-decoration: none;
 }
