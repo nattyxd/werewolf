@@ -56,6 +56,68 @@ main#home{
   border: 2px solid #fff;
 }
 
+#lobbybox{
+  width: 520px;
+  min-height: 300px;
+  background-color: #fff;
+}
+
+#lobbytopheader{
+  width: 490px;
+  padding: 15px;
+  height: 45px;
+  text-align: center;
+  font-size: 36px;
+  background-color: #424242;
+}
+
+.player{
+  width: 520px;
+  height: 60px;
+  border-bottom: 2px solid #3f3e3e;
+}
+
+.usericon{
+  width: 60px;
+  height: 60px;
+  background-image: url('../images/audience.svg');
+  float: left;
+}
+
+.spinner{
+  width: 52px;
+  margin: 4px 0px 0px 6px;
+  height: 52px;
+  background-image: url('../images/spinner.svg');
+  background-repeat: none;
+  float: left;
+}
+
+.username{
+  float: left;
+  font-weight: bold;
+  width: 400px;
+  height: 60px;
+  font-size: 32px;
+  color: #262626;
+  line-height: 58px;
+  text-indent: 10px;
+}
+
+.kick{
+  float: left;
+  width: 60px;
+  background-color: #c50909;
+  font-size: 66px;
+  line-height: 42px;
+  text-align: center;
+  height: 60px;
+}
+
+a .kick{
+  color: #fff;
+}
+
 #createlobby{
   margin-top: 25px;
   width: 490px;
@@ -72,11 +134,22 @@ a #createlobby{
   text-decoration: none;
 }
 
+#startbtn{
+  margin-top: 50px;
+  width: 490px;
+  height: 40px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+  padding: 15px;
+  background-color: #07a903;
+}
+
 .clear{
   clear: both;
 }
 
 a {
-  color: #00B7FF;
+  color: #fff;
   text-decoration: none;
 }
