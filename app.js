@@ -8,6 +8,9 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var users = require('./routes/users');
 
+var http = require('http').Server(app);
+var io = require('socket.io')(http);
+
 var app = express();
 
 // view engine setup
@@ -44,3 +47,19 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+//sockets stuff
+io.on('connection', function(socket){
+  console.log('a user connected');
+});
+
+io.on('connection', function(socket){
+  console.log('a user connected');
+  socket.on('disconnect', function(){
+    console.log('user disconnected');
+  });
+});
+
+http.listen(2500, function(){
+  console.log('listening on *:2500');
+});
